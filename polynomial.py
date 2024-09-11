@@ -46,6 +46,6 @@ class Mul:
     
     def evaluate(self, x_value):
         return self.p1.evaluate(x_value) * self.p2.evaluate(x_value)
-    
+ 
 poly = Add( Add( Int(4), Int(3)), Add( X(), Mul( Int(1), Add( Mul(X(), X()), Int(1)))))
-print(poly)
+print(poly.evaluate(-1))
